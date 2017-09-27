@@ -1,0 +1,32 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron" style="background-color:#dddddd;">
+        <h1>Håndlavet keramik med et twist</h1>
+        <p>Spændende og rustikt brugskunst og nips med karakter og originalitet. 
+		Fantasifulde fortolkninger af hverdagens ordinære former, kommer til udtryk i mit keramiks kreative og skæve twist.
+<br/>Alt er håndlavet og hånddrejet.</p>
+        <!--<p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>-->
+      </div>
+	  
+ <!-- <div class="row">
+    <div class="col-lg-4 text-center" ng-repeat="item in topitems">
+      <img src="{{item.image}}" style="height:150px;">
+      <h2>{{item.title}}</h2>
+      <p>{{item.text}}</p>
+    </div>
+  </div>
+-->
+<div class="row container" ng-repeat="category in categories">
+    <hr/>
+	<div class="row">
+	  <h1>{{category.title}}</h1>
+	</div>
+	<div class="row">
+	  <p>{{category.text}}</p>
+	</div>
+    <div class="row" ng-repeat="rows in (category.images | myFilter:3)">
+		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" ng-repeat="item in (category.images | mySecondFilter:rows:3)" style="text-align:center;">
+		  <!--<span>{{item}}</span>-->
+          <a ng-show="item.length > 0" href="{{item}}"><img src="{{item}}" style="max-width:320px; max-height:220px; border: 2px solid #dddddd; border-radius: 20px; padding: 5px; margin:20px;" /></a>
+		</div>
+    </div>
+</div>

@@ -1,5 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" ng-app="keramik">
+  <head>
+    <meta charset="utf-8">
+    <title>Lone Lundholm &middot; Keramik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Lone Lundholm">
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+   </style>
+
+  </head>
 <body>
-<p>Hejsa</p>
-</body>
+
+    <div class="container" style="max-width: 1100px;">
+
+     <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+            <!--
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          <a class="navbar-brand" href="#">Lone Lundholms Keramik</a>
+        </div>
+        <!--
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>--><!--/.nav-collapse -->
+      </div>
+    </div> 
+      <!-- Jumbotron -->
+      <div class="row" style="text-align:center">
+        <img src="static/img/banner.jpg" style="margin:auto;max-width:500px;max-height:216px;width:auto;height:auto;" />
+    </div>
+      <!--  <h1>Marketing stuff!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <p><a class="btn btn-lg btn-success" href="#">Get started today</a></p>
+      -->
+    <hr/>
+      <div ng-view></div>
+      <!-- Example row of columns -->
+      <!--
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+    -->
+      <!-- Site footer -->
+      <div class="footer">
+        <p class="pull-right"><a href="#">Til toppen</a></p>
+        <p>&copy; 2013-2014 Lone Lundholm | <strong>Kontakt:</strong> keramik@lundholms.dk</p>
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
+    <!--    <script src="static/js/bootstrap.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
 </html>
+
